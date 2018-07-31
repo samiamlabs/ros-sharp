@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*
+License: BSD
+https://raw.githubusercontent.com/samiamlabs/dyno/master/LICENCE
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -47,6 +51,7 @@ public class ForkliftController : MonoBehaviour
         target = Quaternion.Euler(0, steerAngleDegrees, 0);
         steerTransform.localPosition = m_SteerLocalPosition;
         steerTransform.localRotation = Quaternion.Slerp(steerTransform.localRotation, target, Time.deltaTime * m_Smooth);
+
     }
 
     void UpdateMovement()
@@ -56,6 +61,7 @@ public class ForkliftController : MonoBehaviour
 
         float angularVelocityY = (driveWheelAngularVelocity * driveWheelRadius * Mathf.Sin(steerAngle)) / wheelBase;
         m_EulerAngularVelocity = new Vector3(0, Mathf.Rad2Deg * angularVelocityY, 0);
+
     }
 
     void FixedUpdate()

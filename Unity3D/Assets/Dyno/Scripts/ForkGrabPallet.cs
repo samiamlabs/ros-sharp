@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+License: BSD
+https://raw.githubusercontent.com/samiamlabs/dyno/master/LICENCE
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

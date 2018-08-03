@@ -163,7 +163,7 @@
   </joint>
   <!-- Fork -->
   <joint name="fork_joint" type="prismatic">
-    <origin rpy="0 0 0" xyz="0.106 0 0"/>
+    <origin rpy="0 0 0" xyz="0.106 0 -0.013"/>
     <parent link="base_link"/>
     <child link="fork_link"/>
     <axis xyz="0 0 1"/>

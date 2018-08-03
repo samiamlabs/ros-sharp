@@ -21,6 +21,9 @@ namespace RosSharp.RosBridgeClient
     {
         private Messages.Geometry.PoseStamped message;
         public string FrameId = "Unity";
+
+        public ClockSubscriber m_SimulationTime;
+
         public Transform PublishedTransform;
 
         protected override void Start()
@@ -44,6 +47,13 @@ namespace RosSharp.RosBridgeClient
         private void UpdateMessage()
         {
             message.header.Update();
+
+            if(m_SimulationTime != null)
+            {
+                message.header.stamp.secs = m_SimulationTime.adjustedSeconds;
+                message.header.stamp.nsecs = m_SimulationTime.adjustedNanoSeconds;
+            }
+
             message.pose.position = GetGeometryPoint(PublishedTransform.position.Unity2Ros());
             message.pose.orientation = GetGeometryQuaternion(PublishedTransform.rotation.Unity2Ros());
 

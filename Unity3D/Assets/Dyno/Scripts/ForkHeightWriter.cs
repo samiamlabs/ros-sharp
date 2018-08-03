@@ -11,11 +11,9 @@ public class ForkHeightWriter : MonoBehaviour {
 
     public ForkliftController forkliftController;
 
-    private Vector3 m_ForkLocalPosition;
     private float m_Initial_y;
 
 	void Start () {
-        m_ForkLocalPosition = transform.localPosition;
         m_Initial_y = transform.localPosition.y;
 	}
 	

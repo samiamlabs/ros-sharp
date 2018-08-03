@@ -22,6 +22,8 @@ namespace RosSharp.RosBridgeClient
         private Messages.Sensor.LaserScan message;
         public string FrameId = "base_scan_link";
 
+        public bool m_Publish_Scan = true;
+
         public ClockSubscriber m_SimulationTime;
 
         public LaserScanReader m_LaserScanReader;
@@ -46,6 +48,11 @@ namespace RosSharp.RosBridgeClient
 
         private void FixedUpdate()
         {
+            if (!m_Publish_Scan)
+            {
+                return;
+            }
+
             if (m_LaserScanReader != null)
             {
                 if (m_ShouldPublishCounter == 0)

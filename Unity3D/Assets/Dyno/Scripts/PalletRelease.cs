@@ -8,8 +8,6 @@ public class PalletRelease : MonoBehaviour {
 
     public GameObject m_CollidingObject;
 
-    private float m_PrevoiusY = 0.0f;
-
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == 9)
@@ -49,8 +47,6 @@ public class PalletRelease : MonoBehaviour {
 
     private void Update()
     {
-        m_PrevoiusY = transform.position.y;
-
         if (m_SupportingObject != null && transform.parent != m_SupportingObject.transform)
         {
             m_SupportingObject = null;

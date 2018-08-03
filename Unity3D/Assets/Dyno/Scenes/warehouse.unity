@@ -3571,9 +3571,9 @@ GameObject:
   - component: {fileID: 1349148461}
   - component: {fileID: 1349148460}
   - component: {fileID: 1349148463}
-  - component: {fileID: 1349148459}
   - component: {fileID: 1349148458}
   - component: {fileID: 1349148457}
+  - component: {fileID: 1349148459}
   - component: {fileID: 1349148462}
   - component: {fileID: 1349148456}
   m_Layer: 0
@@ -3646,6 +3646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Topic: /scan
   FrameId: base_scan_link
+  m_Publish_Scan: 0
   m_SimulationTime: {fileID: 1349148462}
   m_LaserScanReader: {fileID: 634168293}
 --- !u!54 &1349148460
@@ -3710,6 +3711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Topic: /vive_tracker
   FrameId: base_footprint
+  m_SimulationTime: {fileID: 0}
   PublishedTransform: {fileID: 1299171982}
 --- !u!1 &1432985372
 GameObject:

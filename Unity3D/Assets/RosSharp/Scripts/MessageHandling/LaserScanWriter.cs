@@ -1,5 +1,5 @@
 ﻿/*
-© Siemens AG, 2017-2018
+© Siemens AG, 2018
 Author: Berkay Alp Cakal (berkay_alp.cakal.ct@siemens.com)
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,38 +19,38 @@ namespace RosSharp.RosBridgeClient
 {
     public class LaserScanWriter : MonoBehaviour
     {
-        private Renderer _renderer;
-        private float _minRange;
-        private float _maxRange;
-
-
-        private void Start()
-        {
-            _renderer = GetComponent<Renderer>();
-            //_renderer.material.shader = Shader.Find("Particles/Additive");
-        }
-
-        public void SetRanges(float minRange, float maxRange)
-        {
-            _minRange = minRange;
-            _maxRange = maxRange;
-        }
+        private bool isReceived = false;
+        private float range_max;
+        private float range_min;
+        private float[] ranges;
+        private Vector3[] directions;
+        private LaserScanVisualizer[] laserScanVisualizers;
 
         private void Update()
         {
-            UpdateColor(transform.localPosition.magnitude);
+            laserScanVisualizers = GetComponents<LaserScanVisualizer>();
+            if (isReceived)
+                if(laserScanVisualizers != null)
+                    foreach(LaserScanVisualizer laserScanVisualizer in laserScanVisualizers)
+                        laserScanVisualizer.SetSensorData(transform.position, directions, ranges, range_min, range_max);
+            
+            isReceived = false;
         }
 
-        private void UpdateColor(float distance)
+        public void Write(Messages.Sensor.LaserScan laserScan)
         {
-            float h_min = (float)0;
-            float h_max = (float)0.5;
+            ranges = new float[laserScan.ranges.Length];
+            directions = new Vector3[laserScan.ranges.Length];
+            range_max = laserScan.range_max;
+            range_min = laserScan.range_min;
 
-            float h = (float)(h_min + (distance - _minRange) / (_maxRange - _minRange) * (h_max - h_min));
-            float s = (float)1.0;
-            float v = (float)1.0;
-
-            _renderer.material.color = Color.HSVToRGB(h, s, v);
+            for (int i = 0; i < laserScan.ranges.Length; i++)
+            {
+                ranges[i] = laserScan.ranges[i];
+                directions[i] = new Vector3(Mathf.Cos(laserScan.angle_min + laserScan.angle_increment * i), 0, Mathf.Sin(laserScan.angle_min + laserScan.angle_increment * i));
+            }
+            isReceived = true;
         }
+
     }
 }

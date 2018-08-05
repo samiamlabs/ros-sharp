@@ -20,26 +20,18 @@ using UnityEditor;
 
 namespace RosSharp.UrdfImporter
 {
-    public static class RobotCreator
-    {
-        public static GameObject Create(string filename)
-        {
-            Robot robot = new Robot(filename);
-            return robot.Create();
-        }
-    }
-
     public static class UrdfRobotExtensions
     {
         public static GameObject Create(this Robot robot)
         {
-            if (UrdfAssetDatabase.GetAssetPath(robot.filename) == null)
+            if (UrdfAssetPathHandler.IsValidAssetPath(robot.filename))
             { 
                 Debug.LogError("URDF file and ressources must be placed in Assets Folder:\n" + Application.dataPath);
                 return null;
             }
 
-            UrdfAssetDatabase.Initialize(robot);
+            UrdfAssetPathHandler.SetAssetRootFolder(robot);
+            UrdfMaterialHandler.InitializeRobotMaterials(robot);
 
             GameObject gameObject = new GameObject(robot.name);
             robot.root.Create(gameObject);
@@ -48,12 +40,12 @@ namespace RosSharp.UrdfImporter
             Undo.RegisterCreatedObjectUndo(gameObject, "Create " + gameObject.name);
             Selection.activeObject = gameObject;
 
-            setKinematic(gameObject, true);
+            SetKinematic(gameObject, true);
 
             return gameObject;
         }
 
-        public static void setKinematic(GameObject robot, bool isKinematic)
+        public static void SetKinematic(GameObject robot, bool isKinematic)
         {
             Rigidbody[] rigidbodies = robot.GetComponentsInChildren<Rigidbody>();
             foreach (Rigidbody rigidbody in rigidbodies)

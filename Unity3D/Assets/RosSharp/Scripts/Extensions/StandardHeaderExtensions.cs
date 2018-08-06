@@ -17,14 +17,15 @@ namespace RosSharp.RosBridgeClient
 {
     public static class HeaderExtensions
     {
-        public static void Update(this Messages.Standard.Header header)
+        public static void Update(this Messages.Standard.Header header, float delay=0.0f)
         {
-            float time = UnityEngine.Time.realtimeSinceStartup;
+            float time = UnityEngine.Time.realtimeSinceStartup + delay;
             int secs = (int)time;
-            int nsecs = (int)(1000 *(time-secs));
+            int nsecs = (int)(1e9 *(time-secs));
             header.seq++;
             header.stamp.secs = secs;
             header.stamp.nsecs = nsecs;
         }
+
     }
 }

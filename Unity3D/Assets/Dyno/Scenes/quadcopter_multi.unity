@@ -200,6 +200,76 @@ Transform:
   m_Father: {fileID: 1712625097}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1001 &346924292
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.1800003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.9998276
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.018569246
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 33946783761429846, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1061268768}
+    - target: {fileID: 64736797790805992, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 935071647}
+    - target: {fileID: 23927162244780028, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3eee64f4f672fc642ae2cbd449e0c4fb, type: 2}
+    - target: {fileID: 1881014338968090, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_Name
+      value: dyno_quadrotor green
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -182.12799
+      objectReference: {fileID: 0}
+    - target: {fileID: 114115448592536714, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: RosBridgeServerUrl
+      value: ws://thinkpad:9092
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &528842981
 Prefab:
   m_ObjectHideFlags: 0
@@ -333,6 +403,76 @@ Transform:
   m_Father: {fileID: 2098850039}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &659856335
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.2200003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.9998276
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.018569246
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 33946783761429846, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1061268768}
+    - target: {fileID: 64736797790805992, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 935071647}
+    - target: {fileID: 23927162244780028, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 36d0e2b0c0990d748b7336cb0b9eaaaf, type: 2}
+    - target: {fileID: 1881014338968090, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_Name
+      value: dyno_quadrotor yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -182.12799
+      objectReference: {fileID: 0}
+    - target: {fileID: 114115448592536714, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: RosBridgeServerUrl
+      value: ws://thinkpad:9094
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &732216336
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +1044,81 @@ Transform:
   m_Father: {fileID: 1712625097}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1001 &1179936820
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.9998276
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.018569246
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 33946783761429846, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1061268768}
+    - target: {fileID: 64736797790805992, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 935071647}
+    - target: {fileID: 23927162244780028, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7e8a5d3dd10f672429651bd5a0d15c6c, type: 2}
+    - target: {fileID: 1881014338968090, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_Name
+      value: dyno_quadrotor red
+      objectReference: {fileID: 0}
+    - target: {fileID: 23927162244780028, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: be14796f79444b04b917b647f500812a, type: 2}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -182.12799
+      objectReference: {fileID: 0}
+    - target: {fileID: 114115448592536714, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: RosBridgeServerUrl
+      value: ws://thinkpad:9093
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1616040716
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,7 +1271,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.16
       objectReference: {fileID: 0}
     - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1064,23 +1279,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.79
       objectReference: {fileID: 0}
     - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.9998276
       objectReference: {fileID: 0}
     - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.018569246
       objectReference: {fileID: 0}
     - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
       propertyPath: m_RootOrder
@@ -1096,6 +1311,24 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 935071647}
+    - target: {fileID: 23927162244780028, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: be14796f79444b04b917b647f500812a, type: 2}
+    - target: {fileID: 1881014338968090, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_Name
+      value: dyno_quadrotor blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246881392464446, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -182.12799
+      objectReference: {fileID: 0}
+    - target: {fileID: 114115448592536714, guid: b9ee2451a9334e74e850ebb4462c7d65,
+        type: 2}
+      propertyPath: RosBridgeServerUrl
+      value: ws://thinkpad:9091
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9ee2451a9334e74e850ebb4462c7d65, type: 2}
   m_IsPrefabAsset: 0

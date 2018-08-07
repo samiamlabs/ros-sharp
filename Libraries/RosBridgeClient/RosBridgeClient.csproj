@@ -48,6 +48,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Messages\Dyno\ObjectArray.cs" />
+    <Compile Include="Messages\Dyno\Object.cs" />
     <Compile Include="Messages\Rosgraph\Clock.cs" />
     <Compile Include="Messages\Geometry\Accel.cs" />
     <Compile Include="Messages\Geometry\Point.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Protocols\WebSocketSharpProtocol.cs" />
     <Compile Include="RosSocket.cs" />
     <Compile Include="Communication.cs" />
+    <Compile Include="Services\Dyno\GetObjects.cs" />
     <Compile Include="Services\FileServer\GetBinaryFile.cs" />
     <Compile Include="Services\RosApi\GetParam.cs" />
     <Compile Include="Services\Standard\Trigger.cs" />
